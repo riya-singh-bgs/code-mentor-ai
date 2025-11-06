@@ -1,0 +1,75 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(40, 41, 46);
+}
+html,body,#root{
+  height: 100%;
+  width: 100%;
+}
+main {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.left, .right {
+  flex: 1;
+  border-radius: 0.7rem;
+}
+
+.left {
+ background-color: rgb(105, 89, 89);
+  color: #fff;
+  position: relative;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ✅ make the code editor clickable and fill available space */
+.code {
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.react-simple-code-editor {
+  outline: none !important;
+  border: none;
+  background: transparent !important;
+  color: #fff !important;
+  caret-color: white !important;
+  min-height: 100%;
+  width: 100%;
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+}
+
+/* ✅ review button should not overlap editor */
+.review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #7a74ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.right {
+  background-color: rgb(180, 170, 170);
+  border-radius: 0.7rem;
+  padding: 1rem  2rem;
+  font-size: 16px;
+  color:white;
+}
+.review:hover {
+  background-color: #6366f1;
+}
